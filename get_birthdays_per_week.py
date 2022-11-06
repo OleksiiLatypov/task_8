@@ -22,7 +22,7 @@ def get_birthdays_per_week(users: list):
     else:
         for user in users:
             for name in user:
-                if user[name].month == current_day.month and (current_day.day <= user[name].day <= last_day.day) and user[name].weekday():
+                if user[name].month == current_day.month and (current_day.day <= user[name].day <= last_day.day):
                     greeting.append({name: user[name] for name in user})
 
 
